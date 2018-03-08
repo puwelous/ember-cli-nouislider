@@ -4,12 +4,12 @@ import {
 } from 'ember-qunit';
 
 moduleForComponent('range-slider', {
-  // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: [],
+  unit: true,
   beforeEach: function() {
     var component = this.subject();
     component.set("start", 20);
-  }
+  },
 });
 
 test('it renders', function(assert) {
