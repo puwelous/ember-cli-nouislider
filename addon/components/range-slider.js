@@ -74,7 +74,7 @@ export default Ember.Component.extend({
     let slider = $this.noUiSlider;
 
     // We set slider next sync cycle to avoid deprecation warnings
-    run.schedule('sync', () => {
+    run(() => {
       this.set('slider', slider);
 
       sliderEvents.forEach(event => {
